@@ -5,24 +5,89 @@
     <title>Nevel Elephant Allois</title>
     <style media="screen">
 
-    </style>
+      body {
+        text-align: center;
+        padding: 5px;
+      }
+
+      main {
+        background-color: rgb(234, 234, 234);
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      header {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        filter: grayscale(100%);
+        margin: auto;
+        height: auto;
+      }
+
+      #img-div {
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+      }
+
+      #img-caption {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      #tribute-info {
+        max-width: 600px;
+        margin: auto;
+        padding: 10px;
+      }
+
+      ul {
+        text-align: left;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      li {
+        margin: 10px;
+      }
+
+      h3 {
+        padding: 5px;
+      }
+
+    </style
   </head>
 
-  <body id="main">
+  <body>
+    <main id="main">
+      <!-- title -->
+      <header id="title"><h1>Nevel Elephant Allois</h1></header>
 
-    <!-- title -->
-    <header id="title>"Nevel Elephant Allois</header>
+      <!-- image -->
+      <div id="img-div">
+        <img id="image" src="nevel_600x450.jpg" alt="Close up shot of Nevel in deep sleep">
+        <div id="img-caption">This is Nevel doing one of her favorite things.</div>
+      </div>
 
-    <!-- image -->
-    <div id="img-div">
-      <img id="image" src="nevel_200x150.jpg" alt="Nevel smiling big for the camera">
-      <caption id="img-caption">This is Nevel.  She is pictured here with her classic "I love you" smile. She uses it to get what she wants.  It works pretty well.</caption>
-    </div>
+      <!-- content -->
+      <div id="tribute-info">
+        <h3>Here's a time line of Nevel Allois' life:</h3>
+        <ul>
+          <li><strong>2009</strong> - Born in Fort Mill, SC</li>
+          <li><strong>2010</strong> - First time staying overnight at school and discovered she was a painter</li>
+          <li><strong>2015</strong> - Moved to Surf City, NC</li>
+          <li><strong>2015</strong> - Moved to Wilmington, NC</li>
+        </ul>
 
-    <!-- content -->
-    <p id="tribute-info">  She likes to be called, "doOgie", "the greatest doOgie on the WHOLE planet", "Nevel-butt" and "Butthead".</p>
-    <p>She LOVES to go to <a id="tribute-link" src="http://dogsatplay910.com/" target="_blank">school</a> and hang out with all of her doOgie friends.</p>
-
+        <h3>She LOVES to go to <a id="tribute-link" href="http://dogsatplay910.com/" target="_blank" id="tribute-link">Dogs At Play</a> and hang out with all of her friends.</h3>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
   </body>
 
 </html>
