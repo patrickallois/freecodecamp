@@ -1,0 +1,81 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(153, 207, 199);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  margin: 0px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+div {
+
+}
+
+form {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 25px 10% 0px 10%;
+  background-color: rgb(249, 249, 249);
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 2px 30px;
+  padding: 2px;
+}
+
+.question label {
+  border: 1px solid black;
+  width: 20%;
+}
+
+.question input {
+
+}
+
+label {
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+.radio-input-label {
+  padding: 3px;
+}
+
+.radio-input-label > label {
+  padding-left: 0px;
+}
+
+.checkbox-input-label {
+  padding: 3px;
+}
+
+.checkbox-input-label > label {
+  padding-left: 0px;
+}
+
+select {
+
+}
+
+option {
+
+}
+
+button {
+
+}
