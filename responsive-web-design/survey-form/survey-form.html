@@ -9,37 +9,38 @@
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
+
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <p id="description">
+      Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form" class="" action="index.html" method="post">
 
-      <p id="description">
-        Let us know how we can improve freeCodeCamp</p>
-
-      <div class="question">
+      <fieldset>
         <label for="name" id="name-label">
-          *Name:</label>
+          Name</label>
         <input type="text" id="name" required
         minlength="8" maxlength="12" size="50"
         placeholder="Enter your name">
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="email" id="email-label">
-          *Email:</label>
+          Email</label>
         <input type="email" id="email"
         pattern=".+@globex.com" size="50" required
         placeholder="Enter your Email">
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="number" id="number-label">
-          *Age:</label>
+          Age (optional)</label>
         <input type="number" id="number" min="1" max="100"
         placeholder="Age">
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="dropdown" id="dropdown-label">
           Which option best describes your current role?</label>
         <select id="dropdown">
@@ -50,15 +51,16 @@
           <option value="Prefer not to say">Prefer not to say</option>
           <option value="Other">Other</option>
         </select>
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="radio" id="radio-label">
-          * How likely is that you would recommend freeCodeCamp to a friend?</label>
+          How likely is that you would recommend freeCodeCamp to a friend?</label>
         <div id="radio">
           <div class="radio-input-label">
             <input type="radio" id="definitely" name="recommendation"
-            value="definitely">
+            value="definitely"
+            checked>
             <label for="definitely">Definitely</label>
           </div>
           <div class="radio-input-label">
@@ -72,11 +74,12 @@
             <label for="not-sure">Not sure</label>
           </div>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="checkbox" id="checkbox-label">
-          Things that should be improved in the future (Check all that apply):</label>
+          Things that should be improved in the future (Check all that apply)</label>
+
         <div id="checkbox">
 
           <div class="checkbox-input-label">
@@ -145,19 +148,18 @@
             <label for="additional-courses">Additional Courses</label>
           </div>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="question">
+      <fieldset>
         <label for="comments" id="comments-label">
-          Any Comments or Suggestions?</label>
+          Any comments or suggestions?</label>
         <textarea id="comments" name="comments"
-        rows="5" cols="33">
-        Enter your comment here...
-        </textarea>
-      </div>
+        rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
 
-      <button type="submit" id="submit">Submit</button>
-
+      <fieldset>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
     </script>
