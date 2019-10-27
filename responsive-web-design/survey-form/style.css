@@ -1,165 +1,66 @@
-body {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(73, 68, 150, 1);
+@media (max-width: 830px) {
+  header {
+    width: 520px;
+  }
+  form { 
+    width: 516px;
+  }
 }
 
-h1 {
-  margin-bottom: 5px;
-}
-
-p {
-  font-style: italic;
-  font-size: 18px;
-  margin: 5px;
-  padding: 10px;
-}
-
-header {
-  text-align: center;
-  margin: auto;
-  width: 520px;
-  padding: 25px;
-}
-
-div {
-
-}
-
-form {
-  padding: 16px 0px 50px;
-  margin: auto;
-  border-radius: 5px;
-  width: 540px;
-  background-color: rgba(21, 20, 38, 0.75);
-}
-
-fieldset {
-  border-radius: 5px;
-  border: none;
-  padding: 16px 35px;
-}
-
-fieldset label {
-
-}
-
-fieldset input {
-
-}
-
-div label {
-
-}
-
-label {
-  padding: 10px 0px;
-}
-
-input {
-
-}
-
-#name {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 94%;
-  padding: 10px 10px;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 16px;
-  color: light-grey;
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-#email {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 94%;
-  padding: 10px 10px;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 16px;
-  color: light-grey;
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-#number {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 94%;
-  padding: 10px 10px;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 16px;
-  color: light-grey;
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-#dropdown {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 98%;
-  padding: 10px 10px;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 16px;
-  color: light-grey;
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-.radio-input-label {
-  padding: 3px;
-  vertical-align: middle;
-}
-
-.radio-input-label > label {
-  padding-left: 0px;
-  vertical-align: middle;
+@media (width > 760px) {
+  header {
+    width: 600px;
+  }
+  form { 
+    width: 696px;
+  }
 }
 
 .checkbox-input-label {
-  padding: 3px;
+  padding: 5px 0px;
 }
 
-.checkbox-input-label > label {
+.checkbox-input-label label {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.input-answer {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 16px;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.question {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+
+.radio-input-label {
+  padding: 5px 0px;
+  vertical-align: middle;
+}
+
+.radio-input-label label {
   padding-left: 0px;
   vertical-align: middle;
 }
 
-select {
-
-}
-
-option {
-
-}
-
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 2px;
-  color: grey;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 16px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 94.5%;
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: rgba(73, 68, 150, 1); */
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 button {
@@ -169,11 +70,63 @@ button {
   border-radius: 2px;
   border-color: rgb(42, 165, 80);
   background-color: rgb(42, 165, 80);
+  border: none;
   color: inherit;
+  display: border-box;
   font-family: inherit;
   font-style: inherit;
   font-size: 16px;
   width: 100%;
   height: 40px;
-  padding-top: 5px;
+  padding: 5px;
+}
+
+fieldset {
+  border-radius: 5px;
+  border: none;
+  display: border-box;
+  padding: 12px 30px;
+}
+
+form {  
+  background-color: rgba(21, 20, 38, 0.75);
+  border-radius: 5px;
+  margin: auto;
+  padding: 32px 12px 50px;  
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+header {    
+  margin: auto;  
+  padding: 25px;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;
+}
+
+span {
+  font-size: 12px;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  color: grey;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 16px;
 }

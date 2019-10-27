@@ -19,32 +19,32 @@
     <form id="survey-form" class="" action="index.html" method="post">
 
       <fieldset>
-        <label for="name" id="name-label">
-          Name</label>
-        <input type="text" id="name" required
+        <label class="question" for="name" id="name-label">
+          Name</label>  
+        <input class="input-answer" type="text" id="name" required
         minlength="8" maxlength="12" size="50"
         placeholder="Enter your name">
-      </fieldset>
+      </fieldset>      
 
       <fieldset>
-        <label for="email" id="email-label">
+        <label class="question" for="email" id="email-label">
           Email</label>
-        <input type="email" id="email"
+        <input class="input-answer" type="email" id="email"
         pattern=".+@globex.com" size="50" required
         placeholder="Enter your Email">
       </fieldset>
 
       <fieldset>
-        <label for="number" id="number-label">
-          Age (optional)</label>
-        <input type="number" id="number" min="1" max="100"
+        <label class="question" for="number" id="number-label">
+          Age <span>(optional)</span></label>
+        <input class="input-answer" type="number" id="number" min="1" max="100"
         placeholder="Age">
       </fieldset>
 
       <fieldset>
-        <label for="dropdown" id="dropdown-label">
+        <label class="question" for="dropdown" id="dropdown-label">
           Which option best describes your current role?</label>
-        <select id="dropdown">
+        <select class="input-answer" id="dropdown">
           <option value="">Select an option</option>
           <option value="Student">Student</option>
           <option value="Full Time Job">Full Time Job</option>
@@ -55,7 +55,7 @@
       </fieldset>
 
       <fieldset>
-        <label for="radio" id="radio-label">
+        <label class="question" for="radio" id="radio-label">
           How likely is that you would recommend freeCodeCamp to a friend?</label>
         <div id="radio">
           <div class="radio-input-label">
@@ -78,8 +78,8 @@
       </fieldset>
 
       <fieldset>
-        <label for="checkbox" id="checkbox-label">
-          Things that should be improved in the future (Check all that apply)</label>
+        <label class="question" for="checkbox" id="checkbox-label">
+          Things that should be improved in the future <span>(Check all that apply)</span></label>
 
         <div id="checkbox">
 
@@ -152,7 +152,7 @@
       </fieldset>
 
       <fieldset>
-        <label for="comments" id="comments-label">
+        <label class="question" for="comments" id="comments-label">
           Any comments or suggestions?</label>
         <textarea id="comments" name="comments"
         rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
@@ -161,6 +161,7 @@
       <fieldset>
         <button type="submit" id="submit">Submit</button>
       </fieldset>
+      
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
     </script>
