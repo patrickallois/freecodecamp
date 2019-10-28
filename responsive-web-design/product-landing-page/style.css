@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    iframe {
+        width: 400px;
+    }
+}
+
+header {
+    display: flex;
+}
