@@ -96,18 +96,50 @@ iframe {
 
 /* form styling */
 
-.form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    margin: 6em auto;
+form {
+    display: block;
+    text-align: center;
+    margin: 2em auto;
+    width: 80%;
 }
 
 form label {
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+    font-size: 2em;
 }
 
 form input {
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+#submit {
+    border-radius: 3px;
+    border-color: rgb(16, 39, 67);
+    background-color: rgb(16, 39, 67);
+    border: none;
+    color: white;
+    display: border-box;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 16px;
+    width: 6em;
+    height: 35px;
+    padding: 5px;
+}
+
+#email {
+    display: border-box;
+    width: 18em;
+    height: 16px;
+    padding: 5px;
+    margin: 5px;
 }
