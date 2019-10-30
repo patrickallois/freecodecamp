@@ -1,9 +1,113 @@
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     iframe {
         width: 400px;
     }
+    header {
+        display: flex;
+    }
 }
 
+/* general styling */
+
+body {
+    background-color: rgb(85, 194, 243);
+}
+
+body, html {
+    margin: 0;    
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navigation menu styliing */
+
+nav ul {
+    list-style-type: none;
+    padding: 1em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav li {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.75);     
+    color: white;
+
+    display: block;
+    font-size: 2em;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    color: rgb(235, 49, 85);
+}
+
+/* header styling */
+
 header {
+    background-color: rgb(85, 194, 243);
+}
+
+footer {
+    background-color: rgb(85, 194, 243);
+}
+
+/* footer styling */
+
+footer nav li:last-child {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.75);
+}
+
+footer nav li:first-child {
+    border-top: 1px solid rgba(256, 256, 256, 0.75);
+}
+
+footer nav li:last-child {
+    border-bottom: none;
+}
+
+/* merchandise styling */
+
+.items {
+    background-color: rgba(256, 256, 256, 0.5);
+    display: block;
+    border: 3px solid white;
+    border-radius: 5px;
+    height: 16em;
+    width: 60%;
+    margin: 6em auto;
+    box-shadow: 0 0 0 2em #66CCFF;
+}
+
+/* video styling */
+
+iframe {
+    background-color: rgba(256, 256, 256, 0.5);
+    display: block;
+    height: 215px;
+    width: 100%;
+    margin: 6em auto;
+    box-shadow: 0 0 0 2em #66CCFF;
+}
+
+/* form styling */
+
+.form {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 6em auto;
+}
+
+form label {
+    
+}
+
+form input {
+    
 }

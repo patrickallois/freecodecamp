@@ -7,33 +7,61 @@
     <title>Product Landing Page</title>
 </head>
 <body>
+    <!-- header -->
     <header id="header">
         <img src="" alt="" id="header-img">
+
+        <!-- navigation -->
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link" href="#merch">Merch</li>
+                <li class="nav-link" href="#merch">Merchandise</li>
                 <li class="nav-link" href="#video">Video</li>
                 <li class="nav-link" href="#form">Mailing List</li>                
             </ul>
         </nav>
-        <div id="merch"></div>
-        
-        <div>
-            <iframe id="video" width="560" height="315" 
-            src="https://www.youtube.com/embed/qOVos0R_0yk" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </div>
-        
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
+    </header>
+
+    <!-- merchandise -->
+    <div id="merch">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+
+    <!-- video -->
+    <div>
+        <iframe id="video" width="560" height="315" 
+        src="https://www.youtube.com/embed/qOVos0R_0yk" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <!-- form -->
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <div class="form">
             <label for="email"></label>
             <input type="email" id="email" 
                 name="email" placeholder="Get the lastest updates">            
             <input type="submit" id="submit"></input>
-        </form>
+        </div>        
+    </form>
 
-    </header>
+    <!-- footer -->
+    <footer id="footer">
+        <img src="" alt="" id="header-img">
+
+        <!-- navigation -->
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link" href="#merch">Merchandise</li>
+                <li class="nav-link" href="#video">Video</li>
+                <li class="nav-link" href="#form">Mailing List</li>                
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- freecodecamp test insert  -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
     </script>
 </body>
