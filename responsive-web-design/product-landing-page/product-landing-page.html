@@ -9,31 +9,47 @@
 <body>
     <!-- header -->
     <header id="header">
-        <img src="" alt="" id="header-img">
+        <!-- header image -->
+        <img src="images/tbw_yah_logo_bandname_website.png" alt="band logo" id="header-img">
 
         <!-- navigation -->
         <nav id="nav-bar">
-            <ul>
-                <li class="nav-link" href="#merch">Merchandise</li>
-                <li class="nav-link" href="#video">Video</li>
-                <li class="nav-link" href="#form">Mailing List</li>                
-            </ul>
+            <a class="nav-link" href="#merch">Merchandise</a>
+            <a class="nav-link" href="#video">Video</a>
+            <a class="nav-link" href="#form">MailingList</a>
         </nav>
     </header>
 
     <!-- merchandise -->
     <div id="merch">
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
+        <div class="items">
+          <h1 id="title">Days of Ours</h1>
+          <img src="images/tbw-daysofours.jpg" alt="album cover for days of ours" id="tbw-days">
+          <h2 id="price">$10.00</h2>
+        </div>
+        <div class="items">
+            <h1 id="title">Nights of Ours</h1>
+            <img src="images/tbw-nightsofours.jpg" alt="album cover for nights of ours" id="tbw-nights">
+            <h2 id="price">$10.00</h2>
+        </div>
+        <div class="items">
+            <h1 id="title">Hope In Spades</h1>
+            <img src="images/tbw-hopeinspades.jpg" alt="album cover for hope in spades" id="tbw-his">
+            <h2 id="price">$10.00</h2>
+        </div>
+        <div class="items">
+            <h1 id="title">YOU ARE HERE</h1>
+            <img src="images/tbw-youarehere.png" alt="album cover for you are here" id="tbw-yah">
+            <h2 id="price">$10.00</h2>
+        </div>
     </div>
 
     <!-- video -->
     <div>
-        <iframe id="video" width="560" height="315" 
-        src="https://www.youtube.com/embed/qOVos0R_0yk" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe id="video" width="560" height="315"
+        src="https://www.youtube.com/embed/qOVos0R_0yk"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
 
@@ -41,22 +57,13 @@
     <form action="https://www.freecodecamp.com/email-submit" id="form">
         <label for="email">Sign up for the latest product updates</label>
         <input type="email" id="email" pattern=".+@globex.com" size="50"
-            name="email" placeholder="Enter your email address">           
+            name="email" placeholder="Enter your email address">
         <input type="submit" id="submit" name="submit" value="Submit"></input>
     </form>
 
     <!-- footer -->
     <footer id="footer">
-        <img src="" alt="" id="header-img">
 
-        <!-- navigation -->
-        <nav id="nav-bar">
-            <ul>
-                <li class="nav-link" href="#merch">Merchandise</li>
-                <li class="nav-link" href="#video">Video</li>
-                <li class="nav-link" href="#form">Mailing List</li>                
-            </ul>
-        </nav>
     </footer>
 
     <!-- freecodecamp test insert  -->

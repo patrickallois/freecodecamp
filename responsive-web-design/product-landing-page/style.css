@@ -1,124 +1,161 @@
-@media (min-width: 800px) {
-    iframe {
-        width: 400px;
-    }
-    header {
-        display: flex;
-    }
+@media (max-width: 653px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav > a {
+    padding: 2px;
+  }
+}
+@media (max-width: 800px) {
+  #merch {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 /* general styling */
 
 body {
-    background-color: rgb(85, 194, 243);
+  background-color: rgb(85, 194, 243);
 }
 
 body, html {
-    margin: 0;    
+  margin: 0 auto;
 }
 
 html {
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* navigation menu styliing */
-
-nav ul {
-    list-style-type: none;
-    padding: 1em 0;
-    width: 90%;
-    margin: 0 auto;
+a {
+  color: inherit;
+  font-size: 1em;
+  text-decoration: none;
 }
 
-nav li {
-    border-bottom: 1px solid rgba(256, 256, 256, 0.75);     
-    color: white;
-
-    display: block;
-    font-size: 2em;
-    line-height: 2;
-    text-align: center;
-    text-decoration: none;
-}
-
-nav li:hover {
-    color: rgb(235, 49, 85);
+ul {
+  text-decoration: none;
 }
 
 /* header styling */
 
 header {
-    background-color: rgb(85, 194, 243);
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 10px 0px;
+  background-color: rgb(85, 194, 243);
 }
 
-footer {
-    background-color: rgb(85, 194, 243);
+#header-img {
+  display: flex;
+  margin-left: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+  width: 50px;
+}
+
+/* navigation menu styling */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-right: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  width: 35%;
+}
+
+nav > a:hover {
+  color: rgb(235, 49, 85);
 }
 
 /* footer styling */
 
-footer nav li:last-child {
-    border-bottom: 1px solid rgba(256, 256, 256, 0.75);
-}
-
-footer nav li:first-child {
-    border-top: 1px solid rgba(256, 256, 256, 0.75);
-}
-
-footer nav li:last-child {
-    border-bottom: none;
+footer {
+  background-color: gray;
+  height: 50px;
 }
 
 /* merchandise styling */
 
+#merch {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  padding: 15px;
+}
+
 .items {
-    background-color: rgba(256, 256, 256, 0.5);
-    display: block;
-    border: 3px solid white;
-    border-radius: 5px;
-    height: 16em;
-    width: 60%;
-    margin: 6em auto;
-    box-shadow: 0 0 0 2em #66CCFF;
+  background-color: rgba(256, 256, 256, 0.5);
+  border: 3px solid white;
+  border-radius: 5px;
+  height: 280px;
+  width: 300px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.items > #title {
+  background-color: rgb(85, 194, 243);
+  color: white;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.items > img {
+  width: 150px;
+  margin: auto;
+}
+
+.items > #price {
+  color: rgb(85, 194, 243);
+  background-color: white;
+  padding: 15px;
 }
 
 /* video styling */
 
 iframe {
-    background-color: rgba(256, 256, 256, 0.5);
-    display: block;
-    height: 215px;
-    width: 100%;
-    margin: 6em auto;
-    box-shadow: 0 0 0 2em #66CCFF;
+  display: flex;
+  margin: 30px auto;
 }
 
 /* form styling */
 
 form {
-    display: block;
-    text-align: center;
-    margin: 2em auto;
-    width: 80%;
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+  width: 80%;
 }
 
 form label {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    margin: 1em auto;
-    width: 80%;
-    font-size: 2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 1em auto;
+  width: 80%;
+  font-size: 2em;
 }
 
 form input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: auto;
-    border: 1px solid gray;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: auto;
+  border: 1px solid gray;
 }
 
 #submit {
@@ -137,9 +174,9 @@ form input {
 }
 
 #email {
-    display: border-box;
-    width: 18em;
-    height: 16px;
-    padding: 5px;
-    margin: 5px;
+  display: border-box;
+  width: 18em;
+  height: 16px;
+  padding: 5px;
+  margin: 5px;
 }
