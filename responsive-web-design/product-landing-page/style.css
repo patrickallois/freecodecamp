@@ -80,8 +80,12 @@ nav > a:hover {
 /* footer styling */
 
 footer {
-  background-color: gray;
-  height: 50px;
+  background-color: white;
+  border-color: rgb(16, 39, 67);
+  height: 40px;
+  padding: 15px;
+  display: flex;
+  justify-content: end;
 }
 
 /* merchandise styling */
