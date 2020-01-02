@@ -1,0 +1,92 @@
+@media (min-width: 360px) {
+  section {
+    background-color: blue;
+  }
+}
+
+body, html {
+  color: white;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav > a {
+  color: inherit;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 1em;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  height: 4.15em;
+  width: 100%;
+  background-color: rgb(190, 49, 68);
+  border-bottom: 2px solid black;
+}
+
+#welcome-section {
+  background-color: rgb(33, 34, 36);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#welcome-section > img {
+height: 25%;
+border-radius: 100em;
+border: thick double rgb(190, 49, 68);
+}
+
+#welcome-section :nth-child(2) {
+  margin-bottom: 0.5em;
+  font-size: 3.5em;
+}
+
+#welcome-section :last-child {
+  font-family: 'Courier New', serif;
+  margin-top: 0em;
+  font-size: 1.5em;
+  font-weight: 1;
+  color: rgb(190, 49, 68);
+}
+
+#projects {
+  background-color: rgb(69, 86, 125);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects h1 {
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
+  max-width: 300em;
+  line-height: 1.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  background-color: rgb(33, 34, 36);
+}
+
+#contact h1 {
+  font-size: 3.5em;
+}
+
+#contact :nth-child(2) {
+  font-family: 'Courier New', serif;
+}
