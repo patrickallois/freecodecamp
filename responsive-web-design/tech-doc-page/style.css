@@ -1,4 +1,4 @@
-@media (max-width: 810px) {
+@media (max-width: 850px) {
   .scroller {
     width: 100%;
     height: 204px;
@@ -30,7 +30,7 @@
     margin-top: 270px;
   }
 }
-@media (min-width: 810px) {
+@media (min-width: 850px) {
   nav {
     position: fixed;
     top: 0;
